@@ -28,7 +28,7 @@ var lusca = module.exports = function (options) {
     if (options) {
         Object.keys(lusca).forEach(function (key) {
             var config = options[key];
-            console.log('lusca key', key);
+            //console.log('lusca key', key);
             if (config) {
                 headers.push(lusca[key](config));
             }

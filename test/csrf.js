@@ -36,14 +36,14 @@ describe('CSRF', function () {
         var app = mock({ csrf: true });
 
         app.all('/', function (req, res) {
-            console.log('res.locals._csrf', res.locals._csrf);
+            //console.log('res.locals._csrf', res.locals._csrf);
             res.status(200).send({ token: res.locals._csrf });
         });
 
         request(app)
             .get('/')
             .end(function (err, res) {
-                console.log('res.body.token', res.body.token);
+                //console.log('res.body.token', res.body.token);
                 request(app)
                     .post('/')
                     .set('cookie', res.headers['set-cookie'])
