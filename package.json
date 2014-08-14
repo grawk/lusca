@@ -33,6 +33,7 @@
     "cookie-session": "^1.0.2",
     "errorhandler": "^1.1.1",
     "express": "^4.3.8",
+    "express-session": "^1.7.5",
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.7.0",
     "grunt-mocha-test": "~0.7.0",
