@@ -32,6 +32,7 @@ module.exports = function (grunt) {
                 globals: ['chai'],
                 timeout: 15000,
                 ignoreLeaks: false,
+                grep: grunt.option('grep') || 0,
                 ui: 'bdd',
                 reporter: 'spec'
             }
